@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - BotDZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #f59e0b;
+            --success: #10b981;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --radius: 12px;
+            --radius-lg: 16px;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--gray-800);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+        .header p { font-size: 1rem; opacity: 0.9; }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 0.8; }
+
+        .card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gray-100);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--gray-600);
+            margin-bottom: 24px;
+        }
+
+        .section { margin-bottom: 32px; }
+        .section:last-child { margin-bottom: 0; }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--gray-100);
+        }
+        .section-title i { color: var(--primary); }
+
+        .section-content p {
+            margin-bottom: 14px;
+            color: var(--gray-600);
+            text-align: justify;
+        }
+        .section-content ul, .section-content ol {
+            margin-right: 24px;
+            margin-bottom: 14px;
+            color: var(--gray-600);
+        }
+        .section-content li { margin-bottom: 8px; }
+
+        .highlight-box {
+            background: #eff6ff;
+            border-right: 4px solid var(--primary);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+            color: var(--gray-800);
+        }
+
+        .success-box {
+            background: #ecfdf5;
+            border-right: 4px solid var(--success);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+            color: #065f46;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .data-table th {
+            background: var(--primary);
+            color: white;
+            padding: 14px;
+            text-align: right;
+            font-weight: 600;
+        }
+        .data-table td {
+            padding: 14px;
+            border-bottom: 1px solid var(--gray-200);
+            background: var(--gray-50);
+        }
+        .data-table tr:last-child td { border-bottom: none; }
+        .data-table tr:hover td { background: #eff6ff; }
+
+        .footer-links {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .card { padding: 24px; }
+            .header h1 { font-size: 1.5rem; }
+            .data-table { font-size: 0.85rem; }
+            .data-table th, .data-table td { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="checkout.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة للدفع</a>
+
+        <div class="header">
+            <h1><i class="fas fa-shield-alt"></i> سياسة الخصوصية</h1>
+            <p>كيف نحمي بياناتك ونستخدمها في منصة BotDZ</p>
+        </div>
+
+        <div class="card">
+            <div class="last-updated">
+                <i class="fas fa-calendar-alt"></i>
+                آخر تحديث: 11 أغسطس 2026
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-heart"></i> 1. مقدمة</h2>
+                <div class="section-content">
+                    <p>في <strong>BotDZ</strong>، نأخذ خصوصيتك على محمل الجد. هذه السياسة توضح كيفية جمعنا واستخدامنا وحمايتنا لمعلوماتك الشخصية. نلتزم بقانون حماية البيانات الشخصية الجزائري رقم 18-07 ونطبق أعلى معايير الأمان الرقمي.</p>
+                    <div class="success-box">
+                        <strong>وعدنا:</strong> لن نبيع أو نؤجر أو نتاجر ببياناتك الشخصية لأي طرف ثالث. بياناتك ملكك أنت.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-database"></i> 2. البيانات التي نجمعها</h2>
+                <div class="section-content">
+                    <p>نحن نجمع فقط البيانات الضرورية لتقديم خدماتنا. إليك تفصيلاً واضحاً:</p>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>نوع البيانات</th>
+                                <th>الغرض</th>
+                                <th>الإلزامية</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>الاسم الكامل</td>
+                                <td>تحديد هوية المستخدم / التاجر</td>
+                                <td>إلزامي</td>
+                            </tr>
+                            <tr>
+                                <td>رقم الهاتف</td>
+                                <td>التواصل وتأكيد الطلبات</td>
+                                <td>إلزامي</td>
+                            </tr>
+                            <tr>
+                                <td>البريد الإلكتروني</td>
+                                <td>الإشعارات واستعادة الحساب</td>
+                                <td>اختياري</td>
+                            </tr>
+                            <tr>
+                                <td>عنوان الشحن</td>
+                                <td>توصيل الطلبات</td>
+                                <td>إلزامي للعملاء</td>
+                            </tr>
+                            <tr>
+                                <td>معلومات CCP</td>
+                                <td>تحويل مستحقات التجار</td>
+                                <td>إلزامي للتجار</td>
+                            </tr>
+                            <tr>
+                                <td>بيانات الجهاز</td>
+                                <td>تحسين الأمان وتجربة الاستخدام</td>
+                                <td>تلقائي</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-bullseye"></i> 3. كيف نستخدم بياناتك</h2>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>معالجة الطلبات:</strong> إتمام عمليات الشراء والشحن والدفع.</li>
+                        <li><strong>التواصل:</strong> إرسال تأكيدات الطلبات، تحديثات الشحن، وإشعارات الحساب.</li>
+                        <li><strong>الأمان:</strong> حماية حسابك من الاحتيال والوصول غير المصرح به.</li>
+                        <li><strong>التحليلات:</strong> فهم كيفية استخدام المنصة لتحسين خدماتنا (بدون تحديد هويتك).</li>
+                        <li><strong>الدعم الفني:</strong> الرد على استفساراتك وحل المشكلات.</li>
+                        <li><strong>الالتزام القانوني:</strong> الامتثال للقوانين واللوائح الجزائرية.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-lock"></i> 4. حماية البيانات</h2>
+                <div class="section-content">
+                    <p>نستخدم تقنيات أمان متقدمة لحماية بياناتك:</p>
+                    <ul>
+                        <li><strong>تشفير SSL/TLS:</strong> جميع البيانات المنقولة مشفرة ببروتوكول HTTPS.</li>
+                        <li><strong>تشفير قواعد البيانات:</strong> بياناتك المخزنة مشفرة بمعايير AES-256.</li>
+                        <li><strong>المصادقة الثنائية (2FA):</strong> حماية إضافية لحسابات التجار.</li>
+                        <li><strong>جدران الحماية:</strong> حماية من الهجمات الإلكترونية والوصول غير المصرح به.</li>
+                        <li><strong>النسخ الاحتياطي:</strong> نسخ احتياطية يومية مشفرة في مواقع آمنة.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>ملاحظة أمان:</strong> على الرغم من جهودنا المستمرة، لا يوجد نظام آمن 100%. ننصحك باستخدام كلمات مرور قوية وعدم مشاركة بيانات تسجيل الدخول مع أي شخص.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-share-alt"></i> 5. مشاركة البيانات</h2>
+                <div class="section-content">
+                    <p>نحن <strong>لا نبيع</strong> بياناتك. نشاركها فقط في الحالات التالية:</p>
+                    <ul>
+                        <li><strong>شركات الشحن:</strong> (Yalidine, Ecotrans, Prologis) — فقط اسمك ورقم هاتفك وعنوان الشحن لإتمام التوصيل.</li>
+                        <li><strong>السلطات القانونية:</strong> إذا طُلب ذلك بموجب أمر قضائي أو قانوني ساري.</li>
+                        <li><strong>مزودي الخدمات التقنية:</strong> (Vercel, GitHub) — فقط البيانات الضرورية لاستضافة المنصة، وهم ملتزمون بعقود سرية.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-cookie-bite"></i> 6. ملفات تعريف الارتباط (Cookies)</h2>
+                <div class="section-content">
+                    <p>نستخدم ملفات تعريف الارتباط لتحسين تجربتك:</p>
+                    <ul>
+                        <li><strong>ضرورية:</strong> تسجيل الدخول، سلة التسوق، تفضيلات اللغة.</li>
+                        <li><strong>الأداء:</strong> فهم كيفية تصفحك للمنصة لتحسين السرعة والأداء.</li>
+                        <li><strong>الوظيفية:</strong> تذكر تفضيلاتك (مثل العنوان المحفوظ).</li>
+                    </ul>
+                    <p>يمكنك تعطيل ملفات تعريف الارتباط من إعدادات متصفحك، لكن قد يؤثر ذلك على بعض الوظائف.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-user-shield"></i> 7. حقوقك</h2>
+                <div class="section-content">
+                    <p>بصفتك مستخدماً، لك الحقوق التالية بموجب القانون الجزائري:</p>
+                    <ul>
+                        <li><strong>الحق في الوصول:</strong> طلب نسخة من جميع بياناتك الشخصية التي نحتفظ بها.</li>
+                        <li><strong>الحق في التصحيح:</strong> تعديل أي بيانات غير دقيقة أو غير كاملة.</li>
+                        <li><strong>الحق في الحذف:</strong> طلب حذف حسابك وبياناتك (باستثناء البيانات المطلوبة قانونياً).</li>
+                        <li><strong>الحق في الاعتراض:</strong> الاعتراض على استخدام بياناتك لأغراض تسويقية.</li>
+                        <li><strong>الحق في نقل البيانات:</strong> استلام بياناتك في صيغة منظمة وقابلة للقراءة آلياً.</li>
+                    </ul>
+                    <div class="success-box">
+                        <strong>كيف تمارس حقوقك:</strong> أرسل طلبك عبر البريد الإلكتروني support@botdz.dz وسنرد خلال 30 يوماً كحد أقصى.
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-clock"></i> 8. مدة الاحتفاظ بالبيانات</h2>
+                <div class="section-content">
+                    <ul>
+                        <li><strong>بيانات الحساب:</strong> نحتفظ بها طوال فترة نشاط حسابك + 3 سنوات بعد الإغلاق (للالتزام القانوني).</li>
+                        <li><strong>بيانات الطلبات:</strong> 5 سنوات (للأغراض المحاسبية والضريبية).</li>
+                        <li><strong>سجلات الدخول:</strong> 12 شهراً (للأمان وكشف الاحتيال).</li>
+                        <li><strong>بيانات التواصل:</strong> 24 شهراً (للدعم الفني).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-child"></i> 9. حماية الأطفال</h2>
+                <div class="section-content">
+                    <p>منصة BotDZ غير موجهة للأشخاص دون 18 عاماً. لا نجمع عمداً بيانات من القاصرين. إذا اكتشفنا أننا جمعنا بيانات طفل دون السن القانونية، سنقوم بحذفها فوراً.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-globe"></i> 10. التحديثات على هذه السياسة</h2>
+                <div class="section-content">
+                    <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سنخطرك بالتغييرات الجوهرية عبر:</p>
+                    <ul>
+                        <li>إشعار داخل المنصة.</li>
+                        <li>بريد إلكتروني إلى عنوانك المسجل.</li>
+                        <li>تحديث تاريخ "آخر تحديث" أعلى هذه الصفحة.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> 11. التواصل معنا</h2>
+                <div class="section-content">
+                    <p>إذا كان لديك أي سؤال أو استفسار حول سياسة الخصوصية هذه، يمكنك التواصل مع مسؤول حماية البيانات لدينا:</p>
+                    <ul>
+                        <li>البريد الإلكتروني: <strong>privacy@botdz.dz</strong></li>
+                        <li>واتساب: <strong>05XX XX XX XX</strong></li>
+                        <li>العنوان: الجزائر العاصمة، الجزائر</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>الشكاوى:</strong> إذا لم تكن راضياً عن كيفية تعاملنا مع بياناتك، يحق لك تقديم شكوى إلى الهيئة الوطنية لحماية البيانات الشخصية في الجزائر.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="terms.html">شروط الاستخدام</a> |
+            <a href="checkout.html">الدفع</a>
+        </div>
+    </div>
+</body>
+</html>
